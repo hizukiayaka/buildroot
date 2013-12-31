@@ -1,0 +1,7 @@
+config BR2_PACKAGE_X264
+	bool "x264"
+	help
+	  The x264 encoder libraries for videolan.
+
+	  https://www.videolan.org/developers/x264.html
+	

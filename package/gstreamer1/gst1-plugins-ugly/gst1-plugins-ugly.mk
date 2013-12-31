@@ -23,7 +23,6 @@ GST_PLUGINS_BAD1_CONF_OPT += \
 	--disable-cdio \
 	--disable-sidplay \
 	--disable-twolame \
-	--disable-x264
 
 GST1_PLUGINS_UGLY_DEPENDENCIES = gstreamer1 gst1-plugins-base
 
@@ -92,6 +91,11 @@ GST1_PLUGINS_ULGY_HAS_GPL_LICENSE = y
 else
 GST1_PLUGINS_UGLY_CONF_OPT += --disable-mpeg2dec
 endif
+
+ifeq ($(BR2_PACKAGE_X264),y)
+GST1_PLUGINS_UGLY_DEPENDENCIES += x264
+endif
+
 
 # Add GPL license if GPL plugins enabled.
 ifeq ($(GST1_PLUGINS_UGLY_HAS_GPL_LICENSE),y)
