@@ -1,0 +1,10 @@
+config BR2_PACKAGE_GST1_RTSP_SERVER
+	bool "gst1-rtsp_server"
+	select BR2_PACKAGE_GST1_PLUGINS_BASE
+	help
+	  GStreamer plugin .
+
+	  This package contains GStreamer plugins based on
+	  the libav project.
+
+	  http://gstreamer.freedesktop.org/
