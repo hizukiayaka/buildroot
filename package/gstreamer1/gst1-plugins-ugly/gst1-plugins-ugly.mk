@@ -11,12 +11,14 @@ GST1_PLUGINS_UGLY_LICENSE_FILES = COPYING
 # GPL licensed plugins will append to GST1_PLUGINS_UGLY_LICENSE if enabled.
 GST1_PLUGINS_UGLY_LICENSE = LGPLv2.1+
 
+GST1_PLUGINS_UGLY_CONF_ENV = CFLAGS="$(TARGET_CFLAGS) -Wno-warn-unused -Wno-unused-but-set-variable -Wno-unused-variable"
+
 GST1_PLUGINS_UGLY_CONF_OPT = \
 	--disable-examples \
 	--disable-debug \
 	--disable-valgrind
 
-GST_PLUGINS_BAD1_CONF_OPT += \
+GST1_PLUGINS_BAD1_CONF_OPT += \
 	--disable-a52dec \
 	--disable-amrnb \
 	--disable-amrwb \

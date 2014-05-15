@@ -9,10 +9,11 @@ GST1_PLUGINS_GOOD_SOURCE = gst-plugins-good-$(GST1_PLUGINS_GOOD_VERSION).tar.xz
 GST1_PLUGINS_GOOD_SITE = http://gstreamer.freedesktop.org/src/gst-plugins-good
 GST1_PLUGINS_GOOD_LICENSE_FILES = COPYING
 GST1_PLUGINS_GOOD_LICENSE = LGPLv2.1+
+GST1_PLUGINS_GOOD_INSTALL_STAGING = YES
+GST1_PLUGINS_GOOD_CONF_ENV = CFLAGS="$(TARGET_CFLAGS) -Wno-unused-function -Wno-unused-but-set-variable -Wno-unused-variable"
 
 GST1_PLUGINS_GOOD_CONF_OPT = \
-	--disable-debug \
-	--disable-valgrind \
+	$(if $(BR2_PACKAGE_GSTREAMER1_GST_DEBUG),,--disable-debug --disable-valgrind) \
 	--disable-examples \
 	--disable-directsound \
 	--disable-waveform \
@@ -315,6 +316,10 @@ ifeq ($(BR2_PACKAGE_GST1_PLUGINS_GOOD_PLUGIN_V4L2),y)
 GST1_PLUGINS_GOOD_CONF_OPT += --enable-gst_v4l2
 else
 GST1_PLUGINS_GOOD_CONF_OPT += --disable-gst_v4l2
+endif
+
+ifeq ($(BR2_PACKAGE_LIBV4L),y)
+GST1_PLUGINS_GOOD_CONF_OPT += --with-libv4l2
 endif
 
 ifeq ($(BR2_PACKAGE_XORG7),y)
