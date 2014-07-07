@@ -4,9 +4,10 @@
 #
 ################################################################################
 
-GSTREAMER1_VERSION = 1.2.4
-GSTREAMER1_SOURCE = gstreamer-$(GSTREAMER1_VERSION).tar.xz
-GSTREAMER1_SITE = http://gstreamer.freedesktop.org/src/gstreamer
+GSTREAMER1_VERSION = 1.3.4
+GSTREAMER1_SOURCE = gstreamer-$(GSTREAMER1_VERSION).tar.gz
+GSTREAMER1_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
+GSTREAMER1_SITE_METHOD = file
 GSTREAMER1_INSTALL_STAGING = YES
 GSTREAMER1_LICENSE_FILES = COPYING
 GSTREAMER1_LICENSE = LGPLv2+ LGPLv2.1+

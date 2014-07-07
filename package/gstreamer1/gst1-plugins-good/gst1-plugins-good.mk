@@ -4,9 +4,10 @@
 #
 ################################################################################
 
-GST1_PLUGINS_GOOD_VERSION = 1.2.4
-GST1_PLUGINS_GOOD_SOURCE = gst-plugins-good-$(GST1_PLUGINS_GOOD_VERSION).tar.xz
-GST1_PLUGINS_GOOD_SITE = http://gstreamer.freedesktop.org/src/gst-plugins-good
+GST1_PLUGINS_GOOD_VERSION = 1.3.4p
+GST1_PLUGINS_GOOD_SOURCE = gst-plugins-good-$(GST1_PLUGINS_GOOD_VERSION).tar.gz
+GST1_PLUGINS_GOOD_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
+GST1_PLUGINS_GOOD_SITE_METHOD = file
 GST1_PLUGINS_GOOD_LICENSE_FILES = COPYING
 GST1_PLUGINS_GOOD_LICENSE = LGPLv2.1+
 GST1_PLUGINS_GOOD_INSTALL_STAGING = YES

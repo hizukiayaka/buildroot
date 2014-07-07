@@ -4,9 +4,10 @@
 #
 ################################################################################
 
-GST1_PLUGINS_BAD_VERSION = 1.2.4
-GST1_PLUGINS_BAD_SOURCE = gst-plugins-bad-$(GST1_PLUGINS_BAD_VERSION).tar.xz
-GST1_PLUGINS_BAD_SITE = http://gstreamer.freedesktop.org/src/gst-plugins-bad
+GST1_PLUGINS_BAD_VERSION = 1.3.4
+GST1_PLUGINS_BAD_SOURCE = gst-plugins-bad-$(GST1_PLUGINS_BAD_VERSION).tar.gz
+GST1_PLUGINS_BAD_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
+GST1_PLUGINS_BAD_SITE_METHOD = file
 GST1_PLUGINS_BAD_LICENSE_FILES = COPYING COPYING.LIB
 # Unknown and GPL licensed plugins will append to GST1_PLUGINS_BAD_LICENSE if
 # enabled.

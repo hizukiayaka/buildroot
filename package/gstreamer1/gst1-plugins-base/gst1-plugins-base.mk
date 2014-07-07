@@ -4,9 +4,10 @@
 #
 ################################################################################
 
-GST1_PLUGINS_BASE_VERSION = 1.2.4
-GST1_PLUGINS_BASE_SOURCE = gst-plugins-base-$(GST1_PLUGINS_BASE_VERSION).tar.xz
-GST1_PLUGINS_BASE_SITE = http://gstreamer.freedesktop.org/src/gst-plugins-base
+GST1_PLUGINS_BASE_VERSION = 1.3.4
+GST1_PLUGINS_BASE_SOURCE = gst-plugins-base-$(GST1_PLUGINS_BASE_VERSION).tar.gz
+GST1_PLUGINS_BASE_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
+GST1_PLUGINS_BASE_SITE_METHOD = file
 GST1_PLUGINS_BASE_INSTALL_STAGING = YES
 GST1_PLUGINS_BASE_LICENSE_FILES = COPYING.LIB
 GST1_PLUGINS_BASE_LICENSE = LGPLv2+ LGPLv2.1+
