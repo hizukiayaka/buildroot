@@ -4,9 +4,9 @@
 #
 ################################################################################
 
-GSTREAMER1_VERSION = 1.3.4
+GSTREAMER1_VERSION = 1.3.9
 GSTREAMER1_SOURCE = gstreamer-$(GSTREAMER1_VERSION).tar.gz
-GSTREAMER1_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
+GSTREAMER1_SITE = /home/randy/workspace/exynos4412/sysapps/gstreamer
 GSTREAMER1_SITE_METHOD = file
 GSTREAMER1_INSTALL_STAGING = YES
 GSTREAMER1_LICENSE_FILES = COPYING

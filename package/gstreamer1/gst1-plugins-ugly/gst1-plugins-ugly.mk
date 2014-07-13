@@ -4,9 +4,9 @@
 #
 ################################################################################
 
-GST1_PLUGINS_UGLY_VERSION = 1.3.4
+GST1_PLUGINS_UGLY_VERSION = 1.3.9
 GST1_PLUGINS_UGLY_SOURCE = gst-plugins-ugly-$(GST1_PLUGINS_UGLY_VERSION).tar.gz
-GST1_PLUGINS_UGLY_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
+GST1_PLUGINS_UGLY_SITE = /home/randy/workspace/exynos4412/sysapps/gstreamer
 GST1_PLUGINS_UGLY_SITE_METHOD= file
 GST1_PLUGINS_UGLY_LICENSE_FILES = COPYING
 # GPL licensed plugins will append to GST1_PLUGINS_UGLY_LICENSE if enabled.
