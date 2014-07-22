@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-GST1_PLUGINS_GOOD_VERSION = 1.3.9p
+GST1_PLUGINS_GOOD_VERSION = 1.4.0p
 GST1_PLUGINS_GOOD_SOURCE = gst-plugins-good-$(GST1_PLUGINS_GOOD_VERSION).tar.gz
 GST1_PLUGINS_GOOD_SITE = /home/randy/workspace/exynos4412/sysapps/gstreamer
 GST1_PLUGINS_GOOD_SITE_METHOD = file

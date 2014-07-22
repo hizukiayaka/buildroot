@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-GSTREAMER1_VERSION = 1.3.9
+GSTREAMER1_VERSION = 1.4.0
 GSTREAMER1_SOURCE = gstreamer-$(GSTREAMER1_VERSION).tar.gz
 GSTREAMER1_SITE = /home/randy/workspace/exynos4412/sysapps/gstreamer
 GSTREAMER1_SITE_METHOD = file

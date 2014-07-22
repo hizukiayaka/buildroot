@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-GST1_PLUGINS_UGLY_VERSION = 1.3.9
+GST1_PLUGINS_UGLY_VERSION = 1.4.0
 GST1_PLUGINS_UGLY_SOURCE = gst-plugins-ugly-$(GST1_PLUGINS_UGLY_VERSION).tar.gz
 GST1_PLUGINS_UGLY_SITE = /home/randy/workspace/exynos4412/sysapps/gstreamer
 GST1_PLUGINS_UGLY_SITE_METHOD= file

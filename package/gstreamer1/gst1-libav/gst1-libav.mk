@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-GST1_LIBAV_VERSION = 1.3.1
+GST1_LIBAV_VERSION = 1.4.0
 GST1_LIBAV_SOURCE = gst-libav-$(GST1_LIBAV_VERSION).tar.gz
 GST1_LIBAV_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
 GST1_LIBAV_SITE_METHOD = file

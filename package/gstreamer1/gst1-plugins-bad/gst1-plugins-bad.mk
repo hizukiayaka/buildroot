@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-GST1_PLUGINS_BAD_VERSION = 1.3.9
+GST1_PLUGINS_BAD_VERSION = 1.4.0
 GST1_PLUGINS_BAD_SOURCE = gst-plugins-bad-$(GST1_PLUGINS_BAD_VERSION).tar.gz
 GST1_PLUGINS_BAD_SITE = /home/randy/workspace/exynos4412/sysapps/gstreamer
 GST1_PLUGINS_BAD_SITE_METHOD = file

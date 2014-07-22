@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-GST1_PLUGINS_BASE_VERSION = 1.3.9
+GST1_PLUGINS_BASE_VERSION = 1.4.0
 GST1_PLUGINS_BASE_SOURCE = gst-plugins-base-$(GST1_PLUGINS_BASE_VERSION).tar.gz
 GST1_PLUGINS_BASE_SITE = /home/randy/workspace/exynos4412/sysapps/gstreamer
 GST1_PLUGINS_BASE_SITE_METHOD = file
