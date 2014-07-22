@@ -8,6 +8,7 @@ GST1_LIBAV_VERSION = 1.3.1
 GST1_LIBAV_SOURCE = gst-libav-$(GST1_LIBAV_VERSION).tar.gz
 GST1_LIBAV_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
 GST1_LIBAV_SITE_METHOD = file
+GST1_LIBAV_INSTALL_STAGING = YES
 
 GST1_LIBAV_DEPENDENCIES = host-pkgconf gstreamer1 gst1-plugins-base
 GST1_LIBAV_CONF_ENV = CFLAGS="$(TARGET_CFLAGS) -Wno-warn-unused -Wno-unused-but-set-variable -Wno-unused-variable"
