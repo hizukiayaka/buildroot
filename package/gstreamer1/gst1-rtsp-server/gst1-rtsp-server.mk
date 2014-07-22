@@ -4,9 +4,9 @@
 #
 ################################################################################
 
-GST1_RTSP_SERVER_VERSION = 1.4.0
-GST1_RTSP_SERVER_SOURCE = gst-rtsp-server-$(GST1_RTSP_SERVER_VERSION).tar.xz
-GST1_RTSP_SERVER_SITE = /home/ayaka/workplace/exynos4412/sysapps/gstreamer
+GST1_RTSP_SERVER_VERSION = 1.5.0
+GST1_RTSP_SERVER_SOURCE = gst-rtsp-server-$(GST1_RTSP_SERVER_VERSION).tar.gz
+GST1_RTSP_SERVER_SITE = /home/randy/workspace/exynos4412/sysapps/gstreamer
 GST1_RTSP_SERVER_SITE_METHOD =  file
 GST1_RTSP_SERVER_INSTALL_STAGING = YES
 
