@@ -1,0 +1,7 @@
+config BR2_PACKAGE_PYTHON_TWISTED
+	bool "python-twisted"
+	depends on (BR2_PACKAGE_PYTHON || BR2_PACKAGE_PYTHON3) && BR2_PACKAGE_PYTHON_ZOPE
+	help
+	  Twisted is an event-driven networking engine written in Python and licensed under the open source.
+
+	  https://twistedmatrix.com/trac/
