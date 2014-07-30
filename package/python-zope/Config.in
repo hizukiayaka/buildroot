@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PYTHON_ZOPE
+	bool "python-zope"
+	depends on BR2_PACKAGE_PYTHON || BR2_PACKAGE_PYTHON3
+	help
+		Nothing

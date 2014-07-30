@@ -503,6 +503,7 @@ menu "external python modules"
 	source "package/python-tornado/Config.in"
 	source "package/python-twisted/Config.in"
 	source "package/python-versiontools/Config.in"
+	source "package/python-zope/Config.in"
 endmenu
 endif
 	source "package/ruby/Config.in"
