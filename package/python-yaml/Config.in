@@ -1,0 +1,7 @@
+config BR2_PACKAGE_PYTHON_YAML
+	bool "python-yaml"
+	depends on BR2_PACKAGE_PYTHON || BR2_PACKAGE_PYTHON3
+	help
+	  PyYAML is a YAML parser and emitter for the Python programming language. 
+
+          http://pyyaml.org/wiki/PyYAML
