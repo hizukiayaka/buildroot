@@ -1,0 +1,7 @@
+config BR2_PACKAGE_PYTHON_MINIMALMODBUS
+	bool "python-minimalmodbus"
+	depends on (BR2_PACKAGE_PYTHON || BR2_PACKAGE_PYTHON3) && BR2_PACKAGE_PYTHON_SERIAL
+	help
+	  Easy-to-use Modbus RTU and Modbus ASCII implementation for Python
+
+	  https://pypi.python.org/pypi/MinimalModbus
