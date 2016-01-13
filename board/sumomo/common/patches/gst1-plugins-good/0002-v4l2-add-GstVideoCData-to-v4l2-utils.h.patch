@@ -1,0 +1,63 @@
+From 421e5f8daadde6df368dcddb4d35320e880aabb1 Mon Sep 17 00:00:00 2001
+From: ayaka <ayaka@soulik.info>
+Date: Wed, 10 Sep 2014 05:20:25 +0800
+Subject: [PATCH 02/12] v4l2: add GstVideoCData to v4l2-utils.h
+
+But it broke the code style.
+---
+ sys/v4l2/v4l2-utils.h | 32 +++++++++++++++++++++-----------
+ 1 file changed, 21 insertions(+), 11 deletions(-)
+
+diff --git a/sys/v4l2/v4l2-utils.h b/sys/v4l2/v4l2-utils.h
+index 9a73bd9..65727f6 100644
+--- a/sys/v4l2/v4l2-utils.h
++++ b/sys/v4l2/v4l2-utils.h
+@@ -27,24 +27,34 @@
+ G_BEGIN_DECLS
+ 
+ typedef struct _GstV4l2Iterator GstV4l2Iterator;
++typedef struct _GstV4l2VideoCData GstV4l2VideoCData;
+ 
+ struct _GstV4l2Iterator
+ {
+-    const gchar *device_path;
+-    const gchar *device_name;
+-    const gchar *sys_path;
++  const gchar *device_path;
++  const gchar *device_name;
++  const gchar *sys_path;
+ };
+ 
+-GstV4l2Iterator *  gst_v4l2_iterator_new (void);
+-gboolean           gst_v4l2_iterator_next (GstV4l2Iterator *it);
+-void               gst_v4l2_iterator_free (GstV4l2Iterator *it);
++struct _GstV4l2VideoCData
++{
++  gchar *device;
++  GstCaps *sink_caps;
++  GstCaps *src_caps;
++};
+ 
+-const gchar *      gst_v4l2_iterator_get_device_path (GstV4l2Iterator *it);
+-const gchar *      gst_v4l2_iterator_get_device_name (GstV4l2Iterator *it);
+-const gchar *      gst_v4l2_iterator_get_sys_path (GstV4l2Iterator *it);
+ 
+-G_END_DECLS
++GstV4l2Iterator *gst_v4l2_iterator_new (void);
++gboolean gst_v4l2_iterator_next (GstV4l2Iterator * it);
++void gst_v4l2_iterator_free (GstV4l2Iterator * it);
+ 
+-#endif /* __V4L2_UTILS_H__ */
++const gchar *gst_v4l2_iterator_get_device_path (GstV4l2Iterator * it);
++const gchar *gst_v4l2_iterator_get_device_name (GstV4l2Iterator * it);
++const gchar *gst_v4l2_iterator_get_sys_path (GstV4l2Iterator * it);
+ 
++gboolean
++gst_v4l2_element_register (GstPlugin * plugin, const gchar * basename,
++    const gchar * device_path, GstCaps * sink_caps, GstCaps * src_caps);
+ 
++G_END_DECLS
++#endif /* __V4L2_UTILS_H__ */
+-- 
+2.5.0
+
